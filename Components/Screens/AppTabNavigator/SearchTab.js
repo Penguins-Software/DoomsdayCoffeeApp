@@ -42,7 +42,7 @@ class SearchTab extends Component {
     async getHomeScreenData() {
         try {
             let response = await fetch(
-                'http://192.168.1.105:5000/drinks'
+                'http://192.168.50.116:8080/drinks'
             );
             let json = await response.json();
             this.setState({
